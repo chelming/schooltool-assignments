@@ -1,0 +1,7 @@
+services:
+  schooltool:
+    image: ghcr.io/chelming/schooltool-assignments:${TAG:-latest}
+    container_name: schooltool
+    restart: unless-stopped
+    env_file:
+      - .env
